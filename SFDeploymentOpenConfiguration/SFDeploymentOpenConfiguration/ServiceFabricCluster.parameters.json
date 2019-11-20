@@ -1,0 +1,84 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "clusterName": {
+      "value": "ncachesfcluster"
+    },
+    "clusterLocation": {
+      "value": "southeastasia"
+    },
+    "computeLocation": {
+      "value": "southeastasia"
+    },
+    "adminUserName": {
+      "value": "brad"
+    },
+    "adminPassword": {
+      "value": "4AlachisoftDemo"
+    },
+    "nicName": {
+      "value": "NIC-ncachesfcluster"
+    },
+    "publicIPAddressName": {
+      "value": "ncachesfcluster-PubIP"
+    },
+    "dnsName": {
+      "value": "ncachesfcluster"
+    },
+    "virtualNetworkName": {
+      "value": "VNet-ncachesfcluster"
+    },
+    "lbName": {
+      "value": "LB-ncachesfcluster"
+    },
+    "lbIPName": {
+      "value": "LBIP-ncachesfcluster"
+    },
+    "applicationDiagnosticsStorageAccountName": {
+      "value": "sfdgncachesfcluster9758"
+    },
+    "supportLogStorageAccountName": {
+      "value": "sflogsncachesfcluste4642"
+    },
+    "sourceVaultValue": {
+      "value": "/subscriptions/40f4e53a-5b93-474a-baf3-419a6f147b13/resourcegroups/NCacheServiceFabric/providers/Microsoft.KeyVault/vaults/ncachekeyvault"
+    },
+    "certificateUrlValue": {
+      "value": "https://ncachekeyvault.vault.azure.net/secrets/Certificate/be21ba5f64a24dca82ce57783fde96d8"
+    },
+    "certificateThumbprint": {
+      "value": "7010FE0322BDD03131F3716E7419BB4B2535FA18"
+    },
+    "vmImageSku": {
+      "value": "2016-Datacenter-with-Containers"
+    },
+    "vmImageOffer": {
+      "value": "WindowsServer"
+    },
+    "nt0ephemeralStartPort": {
+      "value": 49152
+    },
+    "nt0ephemeralEndPort": {
+      "value": 65534
+    },
+    "nt0applicationStartPort": {
+      "value": 20000
+    },
+    "nt0applicationEndPort": {
+      "value": 30000
+    },
+    "nt0fabricTcpGatewayPort": {
+      "value": 19000
+    },
+    "nt0fabricHttpGatewayPort": {
+      "value": 19080
+    },
+    "nt0reverseProxyEndpointPort": {
+      "value": 19081
+    },
+    "nt0InstanceCount": {
+      "value": 5
+    }
+  }
+}
